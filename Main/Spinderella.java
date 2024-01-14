@@ -171,18 +171,8 @@ class MapPanel extends JPanel {
             e.printStackTrace();
         }
         Random rand = new Random();
-         JButton resetButton = new JButton("Reset Moves");
-        resetButton.setBounds(200, 80, 120, 50);
 
-        resetButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                spiderMove = 5;
-                repaint();
-            }
-        });
 
-        this.add(resetButton);
         JButton rollButton = new JButton("Click To Roll");
         rollButton.setBounds(50, 150, 100, 50);
         
